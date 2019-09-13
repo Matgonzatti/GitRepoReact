@@ -65,7 +65,7 @@ export const Owner = styled.div`
 
 export const IssuesList = styled.ul`
   padding-top: 30px;
-  margin-top: 30px;
+  margin-top: 10px;
   border-top: 1px solid #eee;
   list-style: none;
 
@@ -120,5 +120,71 @@ export const IssuesList = styled.ul`
         color: #999;
       }
     }
+  }
+`;
+
+export const FilterIssues = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  button {
+    margin: 0 20px;
+    background: #7159c1;
+    width: 100px;
+    border: 0;
+    padding: 5px 15px;
+    margin-left: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+
+    &:hover {
+      background: #857e9c;
+      color: #333;
+    }
+  }
+`;
+
+export const NavigationPages = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  button {
+    margin: 0 20px;
+    background: #7159c1;
+    width: 100px;
+    border: 0;
+    padding: 5px 15px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+
+    &:hover,
+    :disabled {
+      background: #857e9c;
+      color: #333;
+    }
+
+    &:disabled {
+      background: #ddd5fb;
+    }
+  }
+
+  span {
+    background: #ddd5fb;
+    color: #333;
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: 600;
+    height: 20px;
+    padding: 3px 5px;
   }
 `;
